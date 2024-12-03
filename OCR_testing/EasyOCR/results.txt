@@ -1,0 +1,20 @@
+Instructions:
+-To see text output using EasyOCR print the variable that stores the text ("text_extracted")  
+(aka where the readtext method is called on reader object), e.g., extracted_text = reader.readtext(img) (in "easyocr_noOpenCV.py" file)
+-To see bounding boxes and text extracted from the bounding boxes, simply run the "easyocr_noOpenCV.py" 
+and "easyocr_noOpenCV.py" files and the plot with the images will show up.
+
+
+Results:
+-Text Extraction Confidence Results (precalculated metric by EasyOCR): 
+    Output from "easyocr_noOpenCV.py" file without any image preprocessing before text extraction:
+        arithmetic document: Average Confidence Score: 0.3633284060333953
+        tabular document: Average Confidence Score: 0.35610189251621827
+        structured text document: Average Confidence Score: 0.26978130216375
+
+    Output from "easyocr_OpenCV.py" file with image preprocessing before text extraction:
+        tabular document: Average Confidence Score: 0.4293633125261525
+        arithemtic document: Average Confidence Score: 0.34937963490073437
+        structured text document: Average Confidence Score: 0.2858997759862364
+-preprocessing only helped with the tabular document, though confidence score is still low
+    
