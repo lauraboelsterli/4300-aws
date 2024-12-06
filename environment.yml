@@ -1,4 +1,4 @@
-name: lowell_env
+name: aws_lowell
 channels:
   - conda-forge
   - defaults

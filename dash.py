@@ -18,7 +18,7 @@ import vizheatmap as heat
 pn.extension()
 
 # Set up database path
-db_path = "starchive.db"
+db_path = "starchive2.db"
 
 # Dropdown widget for selecting a term
 # term_selector = pn.widgets.Select(name="Select an Astronomimcal Term", options=query.fetch_all_terms(db_path))
